@@ -2,7 +2,7 @@
 public class Tiger extends Animal implements Walk{
     private int numberOfStripes;
     private int speed=40;
-    private int soundLevelOfRoar;
+    private int soundLevel;
 
     public int getNumberOfStripes() {
         return numberOfStripes;
@@ -20,25 +20,27 @@ public class Tiger extends Animal implements Walk{
         this.speed = speed;
     }
 
-    public int getSoundLevelOfRoar() {
-        return soundLevelOfRoar;
+    public int getSoundLevel() {
+        return soundLevel;
     }
 
-    public void setSoundLevelOfRoar(int soundLevelOfRoar) {
-        this.soundLevelOfRoar = soundLevelOfRoar;
+    public void setSoundLevel(int soundLevel) {
+        this.soundLevel = soundLevel;
     }
 
     public Tiger(String Tiger) {
         setNameOfAnimal(Tiger);
     }
-
+    public Tiger(){
+        this("Tiger");
+    }
     @Override
     public void eatingCompleted() {
-     System.out.println("Tiger: I have eaten meat");
+     System.out.println("Tiger: I have eaten meat.");
     }
 
     @Override
     public void walking() {
-     System.out.println("I am walking at the speed "+speed+"mph");
+        System.out.println("Tiger: I am moving at the speed "+speed);
     }
 }

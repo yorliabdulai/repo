@@ -2,6 +2,9 @@ public class Penguin extends Animal implements Swim, Walk{
     public Penguin(String Penguin){
         setNameOfAnimal(Penguin);
     }
+    public Penguin(){
+        this("Penguin");
+    }
     public boolean isSwimming() {
         return isSwimming;
     }
@@ -40,11 +43,11 @@ public class Penguin extends Animal implements Swim, Walk{
 
     @Override
     public void swimming() {
-    System.out.println("Penguin is swimming");
+        System.out.println("Penguin: I am swimming at the speed "+swimSpeed+" nautical miles per hour");
     }
 
     @Override
     public void walking() {
-    System.out.println("Penguine is walking");
+        System.out.println("Penguin: I am walking at the speed 3 mph");
     }
 }

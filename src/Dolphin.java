@@ -1,5 +1,5 @@
 public class Dolphin extends Animal implements Swim{
-    private int swimmingSpeed;
+    private int swimmingSpeed =30;
     private String color;
 
     public int getSwimmingSpeed() {
@@ -20,14 +20,21 @@ public class Dolphin extends Animal implements Swim{
 
     @Override
     public void eatingCompleted() {
-        System.out.println("Dolphin: I am eating delicious fish");
+        System.out.println("Dolphin: I have eaten fish.");
     }
     public Dolphin(String Dolphin){
         setNameOfAnimal(Dolphin);
     }
-
+    public Dolphin(){
+        this("Dolphin");
+    }
     @Override
     public void swimming() {
-    System.out.println("Dolphin: I am swimming at the "+swimmingSpeed+" of 70 nautical miles per hour");
+    System.out.println("Dolphin: I am swimming at the speed "+swimmingSpeed);
     }
+    @Override
+    public void eatingFood() {
+        System.out.println("Dolphin: I am eating delicious fish.");
+    }
+
 }

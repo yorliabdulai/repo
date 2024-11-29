@@ -86,7 +86,7 @@ public class Main {
                                 System.out.println("Enter number of stripes:");
                                 tigerObject.setNumberOfStripes(keyboard.nextInt());
                                 System.out.println("Enter level of roar:");
-                                tigerObject.setSoundLevelOfRoar(keyboard.nextInt());
+                                tigerObject.setSoundLevel(keyboard.nextInt());
                                 System.out.println("Enter weight: ");
                                 tigerObject.setWeight(keyboard.nextInt());
                                 System.out.println("Enter height: ");
@@ -98,7 +98,7 @@ public class Main {
                             case 2:
                                 System.out.println("Speed: "+ tigerObject.getSpeed());
                                 System.out.println("Number of strips: "+ tigerObject.getNumberOfStripes());
-                                System.out.println("Sound level: "+tigerObject.getSoundLevelOfRoar());
+                                System.out.println("Sound level: "+tigerObject.getSoundLevel());
                                 System.out.println("Weight: "+tigerObject.getWeight());
                                 System.out.println("Height:"+tigerObject.getHeight());
                                 System.out.println("Age: "+tigerObject.getAge());
@@ -159,9 +159,9 @@ public class Main {
                     break;
                 case 3:
                     do {
-                        System.out.println("The animal which is chosen is : "+tigerObject.getNameOfAnimal());
+                        System.out.println("The animal which is chosen is : "+penguinObject.getNameOfAnimal());
                         // get menu choice
-                        switch (menuChoice=animalDetailsManipulationMenu(keyboard, tigerObject)) {
+                        switch (menuChoice=animalDetailsManipulationMenu(keyboard, penguinObject)) {
                             case 1:
                                 System.out.println("Enter swim speed:");
                                 penguinObject.setSwimSpeed(keyboard.nextInt());
